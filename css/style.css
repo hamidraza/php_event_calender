@@ -1,0 +1,158 @@
+/* CSS Document */
+html {
+	background:#f9f9f9;
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+* {
+	outline:none;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.clear {
+	clear:both;
+	content:" ";
+	display:block;
+	height:0;
+}
+a {
+	color:#F00;
+	text-decoration:none;
+}
+a:hover {
+	color:#333;
+}
+.date_wrap {
+	position:absolute;
+	left:10px;
+	width:250px;
+	border-right:1px solid #ccc;
+	padding-right:18px;
+	height: 100%;
+	overflow: auto;
+}
+table.calender {
+	border-collapse:collapse;
+	text-align:left;
+	cursor:default;
+	width:100%;
+	box-shadow:2px 2px 0 #ccc;
+	margin-bottom:10px;
+}
+table.calender td, table.calender th {
+	padding:0;
+	margin:0;
+	border:1px solid #ccc;
+}
+table.calender td > span, table.calender th > span {
+	display:block;
+	padding:2px 4px;
+}
+table.calender td, table.calender th {
+	width:14%;
+}
+.cur_date_txt {
+	margin-top:20px;
+	text-align:center;
+}
+table.calender td.cur_dt {
+	background:#9FF;
+}
+table.calender td:hover {
+	background:#fff;
+}
+table.calender td:active {
+	background:#ccc;
+}
+table.calender td.selected {
+	background:#0099FF;
+	color:#fff;
+}
+.date_events h3 {
+	border-bottom:1px dotted #ccc;
+	margin:5px 0 5px 0;
+	padding:5px 0;
+}
+.date_events {
+	margin-top:20px;
+}
+.date_events h3 > a {
+	font-weight:normal;
+	cursor:pointer;
+	font-size:10px;
+}
+ul.event_lists {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.event_wrap {
+	margin-left:278px;
+	border-left:1px solid #ccc;
+	padding:20px;
+}
+form ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+form label {
+	display:block;
+}
+form ul li {
+	padding:5px 0;
+}
+form .field {
+	border:1px solid #ccc;
+	padding:5px 7px;
+	width:300px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	box-shadow:inset 1px 1px 1px #eee;
+}
+form textarea.field {
+	width:500px;
+	height:100px;
+	overflow:auto;
+}
+form .field:hover {
+	border-color:#aaa;
+}
+form .field:focus {
+	border-color:#6CF;
+	box-shadow:inset 1px 1px 1px #ddd;
+}
+.btn {
+	display:inline-block;
+	padding:5px 15px;
+	background:#09F;
+	color:#fff;
+	box-shadow:2px 2px 0px #ccc;
+	border:none;
+	cursor:pointer;
+	position:relative;
+}
+.btn:hover {
+	opacity:0.7;
+}
+.btn:active {
+	background:#09F;
+	top:1px;
+	box-shadow:none;
+	opacity:0.7;
+}
+.date_nav a {
+	display:inline-block;
+	background:#09F;
+	color:#fff;
+	border-radius:3px 3px 0 0;
+	padding:0 10px;
+	line-height:15px;
+	text-align:center;
+}
